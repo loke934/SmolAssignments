@@ -19,6 +19,6 @@ int MyAbs(int x) {
 
 int AbsoluteDifference(int a, int b) {
 	int sum = a - b;
-	MyAbs(sum);
+	sum = MyAbs(sum);
 	return sum;
 }

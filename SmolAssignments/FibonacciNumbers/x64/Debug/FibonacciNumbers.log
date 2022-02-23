@@ -1,2 +1,2 @@
 ﻿  Source.cpp
-  FibonacciNumbers.vcxproj -> C:\Users\elokr\Documents\Projects\FG FT 21\Game Programming with C++\SmolAssignments\SmolAssignments\x64\Debug\FibonacciNumbers.exe
+C:\Users\elokr\Documents\Projects\FG FT 21\Game Programming with C++\SmolAssignments\SmolAssignments\FibonacciNumbers\Source.cpp(43,10): error C3861: 'fib': identifier not found

@@ -19,6 +19,7 @@ bool Compare(string& text, string& search, int index)
 	}
 	return true;
 }
+
 void LinearSearchWord(string& text, string& search)
 {
 	int index = -1;
@@ -34,14 +35,21 @@ void LinearSearchWord(string& text, string& search)
 		if (text[i] == search[0])
 		{
 			index = i;
-			if (Compare(text, search,index))
+			if (Compare(text, search,index) && (text[i + search.length()] == ' ' || text[i + search.length()] == 0))
 			{
 				cout << "Contains word: " << search << endl;
 				return;
 			}
 		}
+		for (;i < text_length; i++)
+		{
+			if (text[i] == ' ')
+			{
+				break;
+			}
+		}
 	}
-	cout << "Does not contain word" << search << endl;
+	cout << "Does not contain word " << search << endl;
 }
 
 int main()

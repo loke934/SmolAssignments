@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 void FibonacciRecursion(int number,int a, int b)
 {
 	int result{0};

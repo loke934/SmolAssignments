@@ -4,7 +4,6 @@ using namespace std;
 
 void MinMaxSumAverage(int* arr, int length)
 {
-	
 	int min = arr[0];
 	int max = arr[0];
 	int sum{0};

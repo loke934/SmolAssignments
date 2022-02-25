@@ -1,10 +1,10 @@
 #include <iostream>
-#include <C:\Users\elokr\Documents\Projects\FG FT 21\Game Programming with C++\SmolAssignments\SmolAssignments\CelciusToFahrenheit\Header.h>
+#include "celsiusToFahrenheit.h"
 
 using namespace std;
 
-int main() {
-
+int main()
+{
 	double celsius;
 	cout << "Write a number in celsius: " << endl;
 	cin >> celsius;

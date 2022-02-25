@@ -3,14 +3,14 @@
 
 using namespace std;
 
-void PrintInReverse(string& str)//why can't have in header
+void PrintInReverse(string& str)
 {
 	int length{};
 	for (char ch : str)
 	{
 		length++;
 	}
-	//const int length = str.length();
+
 	for (int i = length - 1; i >= 0; i--)
 	{
 		cout << str[i];
@@ -25,4 +25,5 @@ int main()
 	getline(cin, input);
 	PrintInReverse(input);
 }
+
 

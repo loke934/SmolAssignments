@@ -21,6 +21,7 @@ int main()
 	string word;
 	cout << "Enter a word" << endl;
 	getline(cin, word);
+
 	if (CheckIfPalindrome(word, 0, word.length() - 1))
 	{
 		cout << "Is palindrome" << endl;

@@ -1,12 +1,11 @@
 #include <iostream>
-#include <C:\Users\elokr\Documents\Projects\FG FT 21\Game Programming with C++\SmolAssignments\SmolAssignments\GuessingGame\Header.h>
+#include "guessingGame.h"
 
 using namespace std;
 
 int main() {
 	GuessNumber();
 }
-
 
 void GuessNumber() {
 	int randomNum = rand() % 10 + 1;

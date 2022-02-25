@@ -1,5 +1,5 @@
 #include <iostream>
-#include <C:\Users\elokr\Documents\Projects\FG FT 21\Game Programming with C++\SmolAssignments\SmolAssignments\AbsoluteDifference\Header.h>
+#include "absoluteDifference.h"
 
 using namespace std;
 

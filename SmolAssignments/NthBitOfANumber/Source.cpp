@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool RetriveNthBit(int& ref, int bitPos)
+bool RetrieveNthBit(int& ref, int bitPos)
 {
 	int y = 1 << bitPos;
 	bool isSet = (ref & y) != 0;
@@ -18,7 +18,7 @@ int main()
 {
 	int num = 12;
 
-	int value = RetriveNthBit(num, 2);
+	const int value = RetrieveNthBit(num, 2);
 	cout << value << endl;
 
 	SetNthBit(num, 0);

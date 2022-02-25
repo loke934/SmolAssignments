@@ -24,6 +24,7 @@
     <ProjectGuid>{d7e51912-828d-4ab3-8307-230e152a7bbe}</ProjectGuid>
     <RootNamespace>SwapBitwise</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>12.Swap Bitwise (easy)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

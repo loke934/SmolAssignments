@@ -24,6 +24,7 @@
     <ProjectGuid>{cfe9ce79-873a-4c64-9a8d-acd720c22727}</ProjectGuid>
     <RootNamespace>ContainsNumber</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>19.Contains Number (hard)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

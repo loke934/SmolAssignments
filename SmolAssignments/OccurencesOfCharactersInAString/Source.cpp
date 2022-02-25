@@ -1,26 +1,39 @@
 #include <iostream>
 #include<string>
+#include <unordered_map>
 
 using namespace std;
 
-void Occurences(string& text)
+void Occurrences(string& text)
 {
-	int length = 0;
+	unordered_map<char, int> letter_map;
+
 	for (char ch: text)
 	{
-		length++;
+		ch = (char)toupper(ch);
 
+		if (letter_map.count(ch) > 0)
+		{
+			int value = letter_map[ch];
+			letter_map[ch] = value + 1;
+		}
+		else
+		{
+			letter_map.insert(pair<char, int>(ch, 1));
+		}
 	}
 
-	for (int i = 0; i < text.length; i++)
+	unordered_map<char, int> ::iterator it;
+	for (it = letter_map.begin(); it != letter_map.end(); it++)
 	{
-
+		cout <<" " << it->first << ": " << it->second << endl;
 	}
-	
 }
 
 int main()
 {
+	cout << "Write a word:" << endl;
 	string text;
 	cin >> text;
+	Occurrences(text);
 }

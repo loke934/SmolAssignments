@@ -24,6 +24,7 @@
     <ProjectGuid>{c9f8cd8b-cb8f-4f8c-9a7e-a228c744808a}</ProjectGuid>
     <RootNamespace>AbsoluteDifference</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>1.Absolute Difference (easy)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -24,6 +24,7 @@
     <ProjectGuid>{2fefda15-9f1a-4611-9062-779518267640}</ProjectGuid>
     <RootNamespace>LuckyNumber</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>17.Lucky Number (intermediate)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

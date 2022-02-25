@@ -24,6 +24,7 @@
     <ProjectGuid>{718b5689-8ce5-44cd-a685-8a08d3ca07a6}</ProjectGuid>
     <RootNamespace>ConstructorOrderInInheritence</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>14.Constructor Order In Inheritence (easy)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

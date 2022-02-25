@@ -24,6 +24,7 @@
     <ProjectGuid>{9d54e50f-f612-44bd-9426-093c199b2b35}</ProjectGuid>
     <RootNamespace>OccurencesOfCharactersInAString</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>15.Occurrences Of Characters In a String (intermediate)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -24,6 +24,7 @@
     <ProjectGuid>{f6034ddc-52ea-4809-8df8-1533381e1282}</ProjectGuid>
     <RootNamespace>MinMaxSumAverage</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>13.Min Max Sum Average (easy)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -24,6 +24,7 @@
     <ProjectGuid>{259ff788-8c68-4c0a-add5-331a1010a6e6}</ProjectGuid>
     <RootNamespace>LinearSearch</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>9.Linear Search (easy)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

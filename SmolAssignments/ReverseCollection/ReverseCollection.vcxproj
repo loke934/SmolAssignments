@@ -24,6 +24,7 @@
     <ProjectGuid>{1b8eb774-7da7-400c-a8ce-3d9be3076a23}</ProjectGuid>
     <RootNamespace>ReverseCollection</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>8.Reverse Collection (easy)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

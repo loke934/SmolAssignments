@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void FibonacciRecursion(int number,int a, int b)
+void fibonacci_recursion(int number,int a, int b)
 {
 	int result{0};
 
@@ -13,11 +13,11 @@ void FibonacciRecursion(int number,int a, int b)
 	result = a + b;
 	number--;
 	cout << result << ",";
-	FibonacciRecursion(number, result, a);
+	fibonacci_recursion(number, result, a);
 	cout << endl;
 }
 
-void FibonacciIterative(int number)
+void fibonacci_iterative(int number)
 {
 	int a = 0;
 	int b = 1;
@@ -37,6 +37,6 @@ int main()
 	int number;
 	cout << "Write a number:" << endl;
 	cin >> number;
-	FibonacciRecursion(number, 0, 1);
-	FibonacciIterative(number);
+	fibonacci_recursion(number, 0, 1);
+	fibonacci_iterative(number);
 }

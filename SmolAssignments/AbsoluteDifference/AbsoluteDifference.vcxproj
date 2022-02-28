@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="absoluteDifference.h" />
+    <ClInclude Include="absolute_difference.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />

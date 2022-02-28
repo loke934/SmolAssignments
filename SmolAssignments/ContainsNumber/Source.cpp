@@ -2,12 +2,12 @@
 
 using namespace std;
 
-void ContainNumber(int& a, int& number)
+void contains_number(const int& a, int& number)
 {
-	int whole_number = number;
+	const int whole_number = number;
 	while (number != 0)
 	{
-		int current_digit = number % 10;
+		const int current_digit = number % 10;
 		if (current_digit == a)
 		{
 			cout << whole_number << " contains number " << a << endl;
@@ -27,5 +27,5 @@ int main()
 	cin >> a;
 	cout << "Write any number:" << endl;
 	cin >> number;
-	ContainNumber(a, number);
+	contains_number(a, number);
 }

@@ -2,12 +2,12 @@
 
 using namespace std;
 
-void CheckIfLuckyNumber(int number)
+void check_if_lucky_number(int number)
 {
-	int last_digit = number % 10;
+	const int last_digit = number % 10;
 	while (number != 0)
 	{
-		int current_digit = number % 10;
+		const int current_digit = number % 10;
 		if (current_digit != last_digit)
 		{
 			cout << "Not lucky number" << endl;
@@ -23,5 +23,5 @@ int main()
 	int number;
 	cout << "Write a number:" << endl;
 	cin >> number;
-	CheckIfLuckyNumber(number);
+	check_if_lucky_number(number);
 }

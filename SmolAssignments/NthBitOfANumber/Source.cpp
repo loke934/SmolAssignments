@@ -2,14 +2,14 @@
 
 using namespace std;
 
-bool RetrieveNthBit(int& ref, int bitPos)
+bool retrieve_nth_bit(int& ref, const int bit_pos)
 {
-	int y = 1 << bitPos;
-	bool isSet = (ref & y) != 0;
-	return isSet;
+	int temp = 1 << bit_pos;
+	const bool is_set = (ref & temp) != 0;
+	return is_set;
 }
 
-void SetNthBit(int& ref, int nth)
+void set_nth_bit(int& ref, int nth)
 {
 	ref |= 1 << nth;
 }
@@ -18,9 +18,9 @@ int main()
 {
 	int num = 12;
 
-	const int value = RetrieveNthBit(num, 2);
+	const int value = retrieve_nth_bit(num, 2);
 	cout << value << endl;
 
-	SetNthBit(num, 0);
+	set_nth_bit(num, 0);
 	cout << num << endl;
 }

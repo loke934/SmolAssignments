@@ -4,12 +4,12 @@
 using namespace std;
 
 int main() {
-	GuessNumber();
+	guess_number();
 }
 
-void GuessNumber() {
-	int randomNum = rand() % 10 + 1;
-	int input;
+void guess_number() {
+	const int randomNum = rand() % 10 + 1;
+	int input{};
 	int count{};
 	cout << "Guess the secret number" << endl;
 
@@ -38,6 +38,6 @@ void GuessNumber() {
 	cin >> input;
 	if (input == 1)
 	{
-		GuessNumber();
+		guess_number();
 	}
 }

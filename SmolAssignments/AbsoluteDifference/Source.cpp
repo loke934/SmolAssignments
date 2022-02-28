@@ -1,5 +1,5 @@
 #include <iostream>
-#include "absoluteDifference.h"
+#include "absolute_difference.h"
 
 using namespace std;
 
@@ -10,15 +10,15 @@ int main() {
 	cin >> a;
 	cout << "Number 2: " << endl;
 	cin >> b;
-	cout << "The absolute difference is: " << AbsoluteDifference(a, b) << endl;
+	cout << "The absolute difference is: " << absolute_difference(a, b) << endl;
 }
 
-int MyAbs(int x) {
+int my_abs(int x) {
 	return x < 0 ? -x : x;
 }
 
-int AbsoluteDifference(int a, int b) {
+int absolute_difference(int a, int b) {
 	int sum = a - b;
-	sum = MyAbs(sum);
+	sum = my_abs(sum);
 	return sum;
 }

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void Occurrences(string& text)
+void occurrences(string& text)
 {
 	unordered_map<char, int> letter_map;
 
@@ -14,8 +14,7 @@ void Occurrences(string& text)
 
 		if (letter_map.count(ch) > 0)
 		{
-			int value = letter_map[ch];
-			letter_map[ch] = value + 1;
+			letter_map[ch] = letter_map[ch] + 1;
 		}
 		else
 		{
@@ -24,7 +23,7 @@ void Occurrences(string& text)
 	}
 
 	unordered_map<char, int> ::iterator it;
-	for (it = letter_map.begin(); it != letter_map.end(); it++)
+	for (it = letter_map.begin(); it != letter_map.end(); ++it)
 	{
 		cout <<" " << it->first << ": " << it->second << endl;
 	}
@@ -35,5 +34,5 @@ int main()
 	cout << "Write a word:" << endl;
 	string text;
 	cin >> text;
-	Occurrences(text);
+	occurrences(text);
 }

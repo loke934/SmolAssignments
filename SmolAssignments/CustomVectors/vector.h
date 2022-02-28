@@ -12,44 +12,44 @@ class Vector
 public:
 	Vector()
 	{
-		SetCapacity(10);
+		set_capacity(10);
 	}
 	Vector(int size)
 	{
-		SetCapacity(size);
+		set_capacity(size);
 	}
 	~Vector()
 	{
 		delete[] data_ptr;
 	}
 
-	void SetCapacity(int newCapacity)
+	void set_capacity(int new_capacity)
 	{
 		T* old_data_ptr = data_ptr;
-		data_ptr = new T[newCapacity];
+		data_ptr = new T[new_capacity];
 
 		if (old_data_ptr != nullptr)
 		{
 			memcpy(data_ptr, old_data_ptr, capacity * sizeof(T));
 			delete[] old_data_ptr;
 		}
-		capacity = newCapacity;
+		capacity = new_capacity;
 	}
 
-	void AddValue(T value)
+	void add_value(T value)
 	{
 		if (count >= capacity)
 		{
-			SetCapacity(capacity *= 2);
+			set_capacity(capacity *= 2);
 		}
 		data_ptr[count] = value;
 		count++;
 	}
 
-	T RemoveValue(T value)
+	T remove_value(T value)
 	{
 		int index = -1;
-		T valueToReturn = 0;
+		T value_to_return = 0;
 
 		for (int i = 0; i < count; i++)
 		{
@@ -63,10 +63,10 @@ public:
 		if (index == -1)
 		{
 			std::cout << "Value does not exist" << std::endl;
-			return valueToReturn;
+			return value_to_return;
 		}
 
-		valueToReturn = data_ptr[index];
+		value_to_return = data_ptr[index];
 
 		for (int i = index + 1; i < count; i++)
 		{
@@ -74,7 +74,7 @@ public:
 		}
 		count--;
 
-		return valueToReturn;
+		return value_to_return;
 	}
 
 	T& operator[](int index)
@@ -87,7 +87,7 @@ public:
 		return data_ptr[index];
 	}
 
-	void Print()
+	void print()
 	{
 		for (int i = 0; i < count; i++)
 		{
@@ -96,8 +96,8 @@ public:
 		std::cout << std::endl;
 	}
 
-	int GetSize() { return count; }
-	int GetCapacity() { return capacity; }
+	int get_size() { return count; }
+	int get_capacity() { return capacity; }
 
 };
 
@@ -106,7 +106,7 @@ template<typename T>
 void print_arr(Vector<T>* arr)
 {
 
-	for (int i = 0; i < arr->GetSize(); i++)
+	for (int i = 0; i < arr->get_size(); i++)
 	{
 		std::cout << (*arr)[i] << " ";
 	}

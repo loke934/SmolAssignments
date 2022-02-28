@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="celsiusToFahrenheit.h" />
+    <ClInclude Include="celsius_to_fahrenheit.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />

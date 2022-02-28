@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="absoluteDifference.h">
+    <ClInclude Include="absolute_difference.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int LinearSearch(int* collection, int count, int num)
+int linear_search(int* collection, const int count, const int num)
 {
 	for (int i = 0; i < count; i++)
 	{
@@ -16,19 +16,19 @@ int LinearSearch(int* collection, int count, int num)
 
 int main()
 {
-	int searchNum;
+	int search_num;
 	cout << "What number to search for between 1-20?" << endl;
-	cin >> searchNum;
+	cin >> search_num;
 
 	int collection[10]{ 1,2,3,4,5,6,7,8,9,10 };
-	int index = LinearSearch(collection, 10, searchNum);
+	const int index = linear_search(collection, 10, search_num);
 
 	if (index == -1)
 	{
-		cout << "The number " << searchNum << " was not found." << endl;
+		cout << "The number " << search_num << " was not found." << endl;
 	}
 	else
 	{
-		cout << "The number " << searchNum << " was located at position:  " << index << endl;
+		cout << "The number " << search_num << " was located at position:  " << index << endl;
 	}
 }

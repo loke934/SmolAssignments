@@ -1,10 +1,9 @@
 #pragma once
 
 template<typename T>
-void SwapUsingTemplate(T& a, T& b)
+void swap_using_template(T& a, T& b)
 {
 	a = a + b;
 	b = a - b;
 	a -= b;
-	
 }

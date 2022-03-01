@@ -7,7 +7,7 @@ int main() {
 	int number;
 	cout << "Write a integer number: " << endl;
 	cin >> number;
-	if (EvenOrOddNumber(number))
+	if (even_or_odd_number(number))
 	{
 		cout << "This is a even number." << endl;
 	}
@@ -17,7 +17,7 @@ int main() {
 	}
 }
 
-bool EvenOrOddNumber(int a) {
+bool even_or_odd_number(int a) {
 	if (a % 2 == 0)
 	{
 		return true;

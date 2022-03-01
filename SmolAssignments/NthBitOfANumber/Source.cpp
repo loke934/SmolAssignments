@@ -9,9 +9,9 @@ bool retrieve_nth_bit(int& ref, const int bit_pos)
 	return is_set;
 }
 
-void set_nth_bit(int& ref, int nth)
+void set_nth_bit(int& ref, const int bit_pos)
 {
-	ref |= 1 << nth;
+	ref |= 1 << bit_pos;
 }
 
 int main()

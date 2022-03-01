@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void SwapWithBitwise(int& a, int& b)
+void swap_with_bitwise(int& a, int& b)
 {
 	int c = a ^ b;
 	a = a ^ c;
@@ -17,7 +17,7 @@ int main()
 	cout << "a: " << a << endl;
 	cout << "b: " << b << endl;
 
-	SwapWithBitwise(a, b);
+	swap_with_bitwise(a, b);
 
 	cout << "a: " << a << endl;
 	cout << "b: " << b << endl;

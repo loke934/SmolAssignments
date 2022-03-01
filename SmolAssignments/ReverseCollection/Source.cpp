@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void PrintInReverse(string& str)
+void print_in_reverse(const string& str)
 {
 	int length{};
 	for (char ch : str)
@@ -23,7 +23,7 @@ int main()
 	cout << "Write a word: " << endl;
 	string input;
 	getline(cin, input);
-	PrintInReverse(input);
+	print_in_reverse(input);
 }
 
 

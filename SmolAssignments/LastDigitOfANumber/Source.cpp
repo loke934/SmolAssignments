@@ -7,30 +7,30 @@ int main() {
 	int number;
 	cout << "Write a integer number:" << endl;
 	cin >> number;
-	cout << "Last digit was: " << GetLastDigitOfANumber(number) << endl;
-	WriteOutNumbers(number);
+	cout << "Last digit was: " << get_last_digit_of_a_number(number) << endl;
+	write_out_numbers(number);
 	cout << endl;
-	WriteOutNumbersReverse(number);
+	write_out_numbers_reverse(number);
 }
 
-int GetLastDigitOfANumber(int number) {
+int get_last_digit_of_a_number(int number) {
 	return abs(number) % 10;
 }
 
-void WriteOutNumbers(int number) {
+void write_out_numbers(int number) {
 	if (number > 0)
 	{
-		WriteOutNumbers(number / 10);
+		write_out_numbers(number / 10);
 		int output = number % 10;
 		cout << output;
 	}
 }
 
-void WriteOutNumbersReverse(int number) {
+void write_out_numbers_reverse(int number) {
 	if (number > 0)
 	{
 		int output = number % 10;
 		cout << output;
-		WriteOutNumbersReverse(number /= 10);
+		write_out_numbers_reverse(number /= 10);
 	}
 }

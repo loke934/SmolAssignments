@@ -1,2 +1,2 @@
 #pragma once
-bool EvenOrOddNumber(int a);
+bool even_or_odd_number(int a);

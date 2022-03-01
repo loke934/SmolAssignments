@@ -12,28 +12,28 @@ int main() {
 	cin >> b;
 
 	swap(a, b);
-	PrintSwap(a, b);
+	print_swap(a, b);
 
-	SwapPointer(&a, &b);
-	PrintSwap(a, b);
+	swap_pointer(&a, &b);
+	print_swap(a, b);
 
-	SwapRef(a, b);
-	PrintSwap(a, b);
+	swap_ref(a, b);
+	print_swap(a, b);
 }
 
-void SwapPointer(int* a, int* b) {
+void swap_pointer(int* a, int* b) {
 	*a += *b;
 	*b = *a - *b;
 	*a -= *b;
 }
 
-void SwapRef(int& a, int& b) {
+void swap_ref(int& a, int& b) {
 	a += b;
 	b = a - b;
 	a -= b;
 }
 
-void PrintSwap(int a, int b) {
+void print_swap(int a, int b) {
 	cout << "a: " << a << endl;
 	cout << "b: " << b << endl;
 }

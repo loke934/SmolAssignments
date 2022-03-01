@@ -19,4 +19,6 @@ int main()
 	cout << v1.get_size() << endl;
 	v1.print(); //using internal print
 	print_arr(&v1);//using template print
+
+	return 0;
 }

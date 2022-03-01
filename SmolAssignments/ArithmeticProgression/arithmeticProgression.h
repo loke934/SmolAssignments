@@ -1,2 +1,2 @@
 #pragma once
-bool CheckIfArithmetic(int* arr, int count);
+bool check_if_arithmetic(int* arr, int count);

@@ -11,6 +11,6 @@ int main()
 	cin >> a >> b;
 	cout << "A: " << a << " B: " << b << endl;
 	cout << "doing swap..." << endl;
-	SwapUsingTemplate<int>(a, b);
+	swap_using_template<int>(a, b);
 	cout << "A: " << a << " B: " << b << endl;
 }

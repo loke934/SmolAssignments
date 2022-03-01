@@ -3,7 +3,7 @@
 using namespace std;
 
 template<typename T>
-void FindLargestNumber(T a, T b)
+void find_largest_number(T a, T b)
 {
 	if (a == b)
 	{
@@ -26,6 +26,6 @@ int main()
 	int b;
 	cout << "Input two numbers:" << endl;
 	cin >> a >> b;
-	FindLargestNumber<int>(a, b);
+	find_largest_number<int>(a, b);
 	
 }

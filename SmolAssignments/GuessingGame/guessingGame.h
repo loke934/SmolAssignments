@@ -1,2 +1,2 @@
 #pragma once
-void GuessNumber();
+void guess_number();

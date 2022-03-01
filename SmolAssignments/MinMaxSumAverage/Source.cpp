@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void MinMaxSumAverage(int* arr, int length)
+void min_max_sum_average(int* arr, int length)
 {
 	int min = arr[0];
 	int max = arr[0];
@@ -32,5 +32,5 @@ int main()
 {
 	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
 	int length = size(arr);
-	MinMaxSumAverage(arr, length);
+	min_max_sum_average(arr, length);
 }

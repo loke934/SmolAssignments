@@ -20,7 +20,6 @@ public:
 	}
 	Vector(const Vector<T>& source)
 	{
-		std::cout << "Copy constructor" << std::endl;
 		capacity = source.capacity;
 		count = source.count;
 		if (data_ptr != nullptr)
@@ -40,12 +39,10 @@ public:
 		}
 		data_ptr = source.data_ptr;
 		source.data_ptr = nullptr;
-		std::cout << "Move constructor" << std::endl;
 	}
 
 	~Vector()
 	{
-		std::cout << "Destruct" << std::endl;
 		delete[] data_ptr;
 	}
 
@@ -88,7 +85,6 @@ public:
 
 		if (index == -1)
 		{
-			std::cout << "Value does not exist" << std::endl;
 			return value_to_return;
 		}
 
@@ -107,14 +103,12 @@ public:
 	{
 		if (index >= count)
 		{
-			std::cout << "Index is out of bounds!" << std::endl;
 			exit(1);
 		}
 		return data_ptr[index];
 	}
 	Vector& operator = (const Vector& right_operand)
 	{
-		std::cout << "Copy assignment" << std::endl;
 		if (this != &right_operand)
 		{
 			capacity = right_operand.capacity;
@@ -136,7 +130,6 @@ public:
 			data_ptr = right_operand.data_ptr;
 			right_operand.data_ptr = nullptr;
 		}
-		std::cout << "Move assignment" << std::endl;
 		return *this;
 	}
 

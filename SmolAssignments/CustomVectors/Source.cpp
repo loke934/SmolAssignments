@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	Vector<int> v1;
+	/*Vector<int> v1;
 	Vector<double> v2(5);
 
 	for (int i = 0; i < v1.get_capacity(); i++)
@@ -20,5 +20,16 @@ int main()
 	v1.print(); //using internal print
 	print_arr(&v1);//using template print
 
-	return 0;
+	return 0;*/
+
+	Vector<int> v1;
+
+	for (int i = 0; i < v1.get_capacity(); i++)
+	{
+		v1.add_value(i);
+		cout << v1[i] << " ";
+	}
+
+	Vector<int> v2(v1);
+	v2.print();
 }

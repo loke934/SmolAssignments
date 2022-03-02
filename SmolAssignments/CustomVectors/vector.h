@@ -26,7 +26,7 @@ public:
 		{
 			delete[] data_ptr;
 		}
-		data_ptr = new T[source.count];
+		data_ptr = new T[source.capacity];
 		memcpy(data_ptr, source.data_ptr, source.count * sizeof(T));
 	}
 	Vector(Vector&& source) noexcept

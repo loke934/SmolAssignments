@@ -27,7 +27,10 @@ public:
 			delete[] data_ptr;
 		}
 		data_ptr = new T[source.capacity];
-		memcpy(data_ptr, source.data_ptr, source.count * sizeof(T));
+		for (int i = 0; i < capacity; i++)
+		{
+			data_ptr[i] = source.data_ptr[i];
+		}
 	}
 	Vector(Vector&& source) noexcept
 	{
@@ -53,7 +56,10 @@ public:
 
 		if (old_data_ptr != nullptr)
 		{
-			memcpy(data_ptr, old_data_ptr, capacity * sizeof(T));
+			for (int i = 0; i < capacity; i++)
+			{
+				data_ptr[i] = old_data_ptr[i];
+			}
 			delete[] old_data_ptr;
 		}
 		capacity = new_capacity;
@@ -69,10 +75,9 @@ public:
 		count++;
 	}
 
-	T remove_value(T value)
+	void remove_value(T value)
 	{
 		int index = -1;
-		T value_to_return = 0;
 
 		for (int i = 0; i < count; i++)
 		{
@@ -85,17 +90,21 @@ public:
 
 		if (index == -1)
 		{
-			return value_to_return;
+			std::cout << "Value does not exist in collection" << std::endl;
 		}
-
-		value_to_return = data_ptr[index];
 
 		for (int i = index + 1; i < count; i++)
 		{
 			data_ptr[i - 1] = data_ptr[i];
 		}
 		count--;
+	}
 
+	T remove_value_at_end()
+	{
+		T value_to_return = 0;
+		value_to_return = data_ptr[count - 1];
+		count--;
 		return value_to_return;
 	}
 
@@ -115,11 +124,13 @@ public:
 			count = right_operand.count;
 			delete[] data_ptr;
 			data_ptr = new T[capacity];
-			memcpy(data_ptr, right_operand.data_ptr, count * sizeof(T));
+			for (int i = 0; i < capacity; i++)
+			{
+				data_ptr[i] = right_operand.data_ptr[i];
+			}
 		}
 		return *this;
 	}
-
 	Vector& operator = (Vector&& right_operand) noexcept
 	{
 		if (this != &right_operand)
